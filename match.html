@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3753566651.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/3753566651.js" crossorigin="anonymous"></script>
+    <style>
+    body{
+    border: 3px solid black;
+    }
+    .container{
+        display: flex;
+        width: 85%;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: black;
+        margin-left: 95px;
+    }
+
+    .container img{
+        padding-left: 90px;
+        padding-top: 10px;
+    }
+    p span{
+        font-size: 3em;
+    }
+    .show{
+        color: white;
+        width: 50%;
+        padding-left: 50px;
+        font-size: 1.2em;
+    }
+    .show a{
+        font-size: 1em;
+        text-decoration: none;
+        background-color: red;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-weight: 700;
+        color: aliceblue;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu-one{
+        width: 250px;
+        height: 200px;
+        margin-left: 100px;
+        text-align: center;
+        background-color: black;
+        border-radius: 5px;
+        padding-top: 40px;
+        font-weight: 700;
+    }
+    .menu a{
+        text-decoration: none;
+    }
+    .link-one{
+        background-color: #14b148;
+        padding: 10px 2px;
+        border-radius: 5px;
+    }
+    .link-two{
+        background-color: aliceblue;
+        padding: 8px 35px;
+        border-radius: 5px;
+    }
+    .link-three{
+        background-color: aliceblue;
+        padding: 9px 55px;
+        border-radius: 10px;
+
+    }
+    
+    .footer{
+    background-color: black;
+    height: 400px;
+    }
+    .footer h1{
+        color: white;
+        text-align: center;
+        padding-top: 80px;
+        font-size: 3em;
+    }
+    .footer hr{
+        width: 90%;
+    }
+
+    .foot {
+        color: rgb(226, 213, 213);
+        text-align: center;
+        display: flex;
+        width: 70%;
+        margin-left: 320px;
+
+    }
+    .foot p{
+        padding-left: 30px;
+    }
+
+    .social{
+    text-align: center;
+    padding-left: 603px;
+    width: 100%;
+    word-spacing: 35px;
+    
+    }
+
+    .fa-facebook{
+        color: aliceblue;
+    }
+    .fa-twitter{
+        color: aliceblue;    
+    }
+    .fa-youtube{
+        color: aliceblue;
+    }
+    .box-boss{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 100px;
+        gap: 25px;
+    }
+    .box-one{
+        border: 1px solid skyblue;
+        border-radius: 5px;
+        padding: 15px 15px;
+    }
+   /* For mobile */
+    @media screen and (max-width: 576px) {
+    .container{
+        flex-direction: column;
+        margin-left: 10px;
+        }
+    .first-image{
+        margin-left: -88px;
+        }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu-one{
+        display: column;
+        background-color: white;
+        }
+    .link-one{
+        border: 1px solid black;
+        padding: 10px 0px;
+        }
+    .link-two{
+        border: 1px solid black;
+        padding: 7px 32px;
+        }
+    .link-three{
+        border: 1px solid black;
+        padding: 10px 52px;
+    }
+    .link-three:hover{
+        background-color: #14b148;
+    }
+    
+    .container-two{
+        grid-template-columns: repeat(1, 1fr);
+        }
+
+    .box-boss{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-one{
+        margin-right: 190px;
+
+    }
+
+    .footer{
+        height: 5%;
+        }
+    .foot p{
+        margin-left: 0px;
+        padding-left: 0px;
+        }
+    .foot{
+        margin-left: 0px;
+        flex-direction: column;
+        }
+    .social{
+        padding-left: 210px;
+        }
+    }
+
+    /* for tablet */
+    @media screen and (min-width :577px) and (max-width: 991px) {
+    .container{
+        padding-bottom: 30px;
+        margin-left: 0px;
+        padding-right: 100px;
+    }
+
+    .box-boss{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu{
+        display: grid;
+        margin-bottom: 0px;
+    }
+    
+    .menu-one{
+        margin-bottom: 80px;
+        margin-left: 250px;
+    }
+
+    .foot{
+        margin: 0px;
+        padding-left: 90px;
+    }
+    .social{
+        padding-left: 270px;
+    }
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="show">
+            <p><span>The Greatest </span><span> Show on the</span>  <span>earth</span></p>
+            <p>FIFA have sent out a strict “code of conduct” ahead of the World Cup after warning anyone not complying will be banished from the tournament.</p><br>
+            <a class="watch" href="">Watch Live <i class="fa fa-angle-right"></i></a>
+        </div>
+
+        <div class="first-image">
+            <img src="assets/Banner Image.png" alt="">
+        </div>
+    </section><br><br><br><br>
+
+
+
+
+    <section class="menu">
+        <div class="menu-one"><br>
+            <a class="link-one" href="">Upcomming Match</a><br><br><br>
+            <a class="link-two" href="">All Group</a><br><br><br>
+            <a class="link-three" href="index.html" target="_blank">Blog</a><br>
+        </div>
+
+        <div class="box-boss">
+            <div class="box-one">
+                <img src="assets/Flag.png" alt="">
+                <span class="versus">vs</span>
+                <img src="assets/germany Flag.png" alt="">
+                <p>Germany VS France</p>
+                <p>April 10,2023 1.00PM</p>
+            </div>
+            <div class="box-one">
+                <img src="assets/Flag.png" alt="">
+                <span>vs</span>
+                <img src="assets/germany Flag.png" alt="">
+                <p>Germany VS France</p>
+                <p>April 10,2023 1.00PM</p>
+            </div>
+            <div class="box-one">
+                <img src="assets/Flag.png" alt="">
+                <span>vs</span>
+                <img src="assets/germany Flag.png" alt="">
+                <p>Germany VS France</p>
+                <p>April 10,2023 1.00PM</p>
+            </div>
+            <div class="box-one">
+                <img src="assets/Flag.png" alt="">
+                <span>vs</span>
+                <img src="assets/germany Flag.png" alt="">
+                <p>Germany VS France</p>
+                <p>April 10,2023 1.00PM</p>
+            </div>
+            <div class="box-one">
+                <img src="assets/Flag.png" alt="">
+                <span>vs</span>
+                <img src="assets/germany Flag.png" alt="">
+                <p>Germany VS France</p>
+                <p>April 10,2023 1.00PM</p>
+            </div>
+            <div class="box-one">
+                <img src="assets/Flag.png" alt="">
+                <span>vs</span>
+                <img src="assets/germany Flag.png" alt="">
+                <p>Germany VS France</p>
+                <p>April 10,2023 1.00PM</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h1>Goal</h1><br><hr>
+        <span class="foot">
+            <p>Contact Us </p>
+            <p>Terms of Services</p>
+            <p>Privacy Policy</p>
+            <p>Privacy Setting</p>
+            <p>Goal App</p>
+            <p>Goal Live</p>
+        </span>
+        <span class="social">
+            <a href="https://www.facebook.com/groups/3239038386353394" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/watch?v=9X5zwwYxMvU" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </span>
+    </footer>
+</body>
+</html>

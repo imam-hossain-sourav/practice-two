@@ -1,0 +1,252 @@
+body{
+    border: 3px solid black;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.container{
+    display: flex;
+    width: 93%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    margin-left: 50px;
+}
+
+.container img{
+    padding-left: 90px;
+    padding-top: 10px;
+}
+p span{
+    font-size: 3em;
+}
+.show{
+    color: white;
+    width: 50%;
+    padding-left: 50px;
+    font-size: 1.2em;
+}
+.show a{
+    font-size: 1em;
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+
+.menu{
+    display: flex;
+}
+
+.menu-one{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    padding-top: 10px;
+    font-weight: 700;
+}
+.menu a{
+    text-decoration: none;
+}
+.link-one{
+    background-color: aliceblue;
+    padding: 10px 2px;
+    border-radius: 5px;
+}
+.link-one:hover{
+    background-color: #14b148;
+}
+.link-two{
+    background-color: aliceblue;
+    padding: 8px 35px;
+    border-radius: 5px;
+}
+.link-three{
+    background-color: #14b148;
+    padding: 9px 55px;
+    border-radius: 10px;
+    color: white;
+}
+
+.container-two{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 25px;
+}
+
+.image{
+    border-radius: 5px;
+    padding: 8px;
+}
+.image img{
+    width: 90%;
+
+}
+.image a{
+    font-weight: 700;
+    border: 1px solid black;
+    padding: 5px 25px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.image p{
+    font-weight: 700;
+    padding: 5px 18px;
+    border-radius: 5px;
+}
+.image i{
+    margin-left: 20px;
+}
+
+#time{
+    width: 20px;
+    height: 20px;
+}
+
+
+.footer{
+    background-color: black;
+    height: 400px;
+}
+.footer h1{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 3em;
+}
+.footer hr{
+    width: 90%;
+}
+
+.foot {
+    color: rgb(226, 213, 213);
+    text-align: center;
+    display: flex;
+    width: 70%;
+    margin-left: 320px;
+
+}
+.foot p{
+    padding-left: 30px;
+}
+
+
+
+
+.social{
+   text-align: center;
+   padding-left: 603px;
+   width: 100%;
+   word-spacing: 35px;
+   
+}
+
+.fa-facebook{
+    color: aliceblue;
+}
+.fa-twitter{
+    color: aliceblue;    
+}
+.fa-youtube{
+    color: aliceblue;
+}
+
+/* For mobile */
+@media screen and (max-width: 576px) {
+    .container{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .first-image{
+        margin-left: -88px;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu-one{
+        display: column;
+        background-color: white;
+    }
+    .link-one{
+        border: 1px solid black;
+        padding: 10px 0px;
+    }
+    .link-two{
+        border: 1px solid black;
+        padding: 7px 32px;
+    }
+    .link-three{
+        border: 1px solid black;
+        padding: 10px 52px;
+    }
+    
+    .container-two{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer{
+        height: 5%;
+    }
+    .foot p{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .foot{
+        margin-left: 0px;
+        flex-direction: column;
+    }
+    .social{
+        padding-left: 210px;
+    }
+}
+
+
+/* for tablet */
+ @media screen and (min-width :577px) and (max-width: 991px) {
+
+    .container{
+        margin-left: 15px;
+        padding-bottom: 60px;
+    }
+    .first-image img{
+        padding-left: 0px;
+    }
+    
+    .container-two{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .menu-one{
+        display: flex;
+        background-color: white;
+    }
+
+    .link-one{
+        border: 1px solid black;
+    }
+    .link-two{
+        border: 1px solid black;
+    }
+    .link-three{
+        border: 1px solid black;
+    }
+    .foot{
+        
+        max-width: 500px;
+        margin: 10px auto;
+       
+    }
+    .social{
+        padding-left: 230px;
+    }
+ }   
